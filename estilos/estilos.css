@@ -1,0 +1,66 @@
+body{
+    background: black;
+    text-align: center;
+}
+.header{
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+.header h1{
+    font-size: 25px;
+}
+.header h3{
+    font-size: 16px;
+}
+.circulo{
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    margin: 5px 5px;
+    
+}
+.circulo:active,
+.active{
+    filter: brightness(150%);
+}
+#verde{
+    border-radius: 100% 0 0 0;
+    background: #156229;
+}
+#amarillo{
+    border-radius: 0 100% 0 0;
+    background: #ffca3a;
+}
+#rojo{
+    border-radius: 0 0 0 100%;
+    background: #ae2012;
+}
+#azul{
+    border-radius: 0 0 100% 0;
+    background: #003566;
+}
+
+#jugar{
+    display: block;
+    margin: 2rem auto;
+    width: 105px;
+    height: 25px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    color: #fff;
+    background: #498ac9;
+}
+
+#jugar:disabled{
+    background-color: #eee;
+}
+
+.perdedor{
+    animation: spin 1s ease-in-out;
+}
+@keyframes spin{
+    100% {transform:rotate(180deg)}
+}
